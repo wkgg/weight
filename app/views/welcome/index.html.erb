@@ -1,0 +1,55 @@
+<h1>权重系数动态修正算法模型</h1>
+
+<%= form_for :weight, url: {action: "create"} do |f| %>
+  <p>
+    <%= f.label :初始权重 %><br>
+    <%= f.text_field :weight1 %>
+    <%= f.text_field :weight2 %>
+    <%= f.text_field :weight3 %>
+    <%= f.text_field :weight4 %>
+  </p>
+
+  <p>
+    <%= f.label :专家一打分 %><br>
+    <%= f.label :方案一 %><br>
+    <%= f.text_field :score1A %>
+    <%= f.text_field :score1B %>
+    <%= f.text_field :score1C %>
+    <%= f.text_field :score1D %>
+  </p>
+
+<p>
+  <%= f.label :方案二 %><br>
+  <%= f.text_field :score2A %>
+  <%= f.text_field :score2B %>
+  <%= f.text_field :score2C %>
+  <%= f.text_field :score2D %>
+</p>
+
+<p>
+  <%= f.label :专家二打分 %><br>
+  <%= f.label :方案一 %><br>
+  <%= f.text_field :scoreX1A %>
+  <%= f.text_field :scoreX1B %>
+  <%= f.text_field :scoreX1C %>
+  <%= f.text_field :scoreX1D %>
+</p>
+
+<p>
+<%= f.label :方案二 %><br>
+<%= f.text_field :scoreX2A %>
+<%= f.text_field :scoreX2B %>
+<%= f.text_field :scoreX2C %>
+<%= f.text_field :scoreX2D %>
+</p>
+
+  <p>
+    <%= f.submit name="确定"%>
+  </p>
+<% end %>
+
+<% unless @weightA.nil? %>
+    <div>初始权重: <%=@weightA[0]%>,  <%=@weightA[1]%>,  <%=@weightA[2]%>,  <%=@weightA[3]%></div>
+    <div>专家一修订权重: <%=@weightB[:wang][0]%>,  <%=@weightB[:wang][1]%>,  <%=@weightB[:wang][2]%>,  <%=@weightB[:wang][3]%></div>
+    <div>专家二修订权重: <%=@weightB[:zhang][0]%>,  <%=@weightB[:zhang][1]%>,  <%=@weightB[:zhang][2]%>,  <%=@weightB[:zhang][3]%></div>
+<% end %>
