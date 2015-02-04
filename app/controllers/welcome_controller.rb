@@ -36,10 +36,17 @@ class WelcomeController < ApplicationController
     h4 = -(1/Math.log(2)) * (score[:wang][:A][3] * Math.log(score[:wang][:A][3]) + score[:wang][:B][3] * Math.log(score[:wang][:B][3]))
 
     sum = (1 - h1 + 1 - h2 + 1 - h3 + 1 - h4)
-    @weightB[:wang].push ((1 - h1) / sum).round(2)
-    @weightB[:wang].push ((1 - h2) / sum).round(2)
-    @weightB[:wang].push ((1 - h3) / sum).round(2)
-    @weightB[:wang].push ((1 - h4) / sum).round(2)
+    h11 = h1 * weight[0]
+    h12 = h2 * weight[1]
+    h13 = h3 * weight[2]
+    h14 = h4 * weight[3]
+    sumsum = h11 + h12 + h13 + h14
+
+    @weightB[:wang].push (h11 / sumsum).round(2)
+    @weightB[:wang].push (h12 / sumsum).round(2)
+    @weightB[:wang].push (h13 / sumsum).round(2)
+    @weightB[:wang].push (h14 / sumsum).round(2)
+
 
     h1 = -(1/Math.log(2)) * (score[:zhang][:A][0] * Math.log(score[:zhang][:A][0]) + score[:zhang][:B][0] * Math.log(score[:zhang][:B][0]))
     h2 = -(1/Math.log(2)) * (score[:zhang][:A][1] * Math.log(score[:zhang][:A][1]) + score[:zhang][:B][1] * Math.log(score[:zhang][:B][1]))
@@ -47,11 +54,16 @@ class WelcomeController < ApplicationController
     h4 = -(1/Math.log(2)) * (score[:zhang][:A][3] * Math.log(score[:zhang][:A][3]) + score[:zhang][:B][3] * Math.log(score[:zhang][:B][3]))
 
     sum = (1 - h1 + 1 - h2 + 1 - h3 + 1 - h4)
-    @weightB[:zhang].push ((1 - h1) / sum).round(2)
-    @weightB[:zhang].push ((1 - h2) / sum).round(2)
-    @weightB[:zhang].push ((1 - h3) / sum).round(2)
-    @weightB[:zhang].push ((1 - h4) / sum).round(2)
+    h11 = h1 * weight[0]
+    h12 = h2 * weight[1]
+    h13 = h3 * weight[2]
+    h14 = h4 * weight[3]
+    sumsum = h11 + h12 + h13 + h14
 
+    @weightB[:zhang].push (h11 / sumsum).round(2)
+    @weightB[:zhang].push (h12 / sumsum).round(2)
+    @weightB[:zhang].push (h13 / sumsum).round(2)
+    @weightB[:zhang].push (h14 / sumsum).round(2)
     render :index
   end
 
