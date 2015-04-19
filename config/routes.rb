@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :welcome
   resources :admin
   resources :users
+  resources :scores
   resources :sessions
 
 

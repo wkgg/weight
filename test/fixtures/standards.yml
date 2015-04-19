@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stand12: 1
+  stand13: 1
+  stand23: 1
+
+two:
+  stand12: 1
+  stand13: 1
+  stand23: 1

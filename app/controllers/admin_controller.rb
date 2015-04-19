@@ -3,7 +3,7 @@ class AdminController < ApplicationController
   end
 
   def create
-  	stand12 = standard_params[:stand12]
+    Standard.create(standard_params)
   end
 
   private

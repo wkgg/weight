@@ -41,48 +41,91 @@ $(function() {
 		render: function(){
 			return (
 				<form>
+					项目名称:<input /><br />
+					项目评估标准:<input /><input /><input /><br />
+					标准权重信息:<br />
 					<input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange12} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange13} /><br />
 					<input value={this.state.stand21} name="stand21" onChange={this.handleChange12} /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange23} /><br />
 					<input value={this.state.stand31} name="stand31" onChange={this.handleChange13} /><input value={this.state.stand32} name="stand32" onChange={this.handleChange23} /><input value = "1" /><br />
-					<input type="submit" value="Post" onClick={this.handleSubmit}/>
+					<input type="submit" value="投标" onClick={this.handleSubmit}/>
 				</form>
 			);
 		}
 	});
+
 	var StandardTable = React.createClass({
 		render: function() {
 			return (
-				<div>
-					<p>标准信息</p>
+				<div id="add-standard" clasName="add-stanrard">
 					<StandForm />
 				</div>
 			);
 		}
 	});
 
-	var ResultArea = React.createClass({
-		render: function() {
+	var AddUser = React.createClass({
+		getInitialState: function(){
+			return{name:null, password:null}
+		},
+		handleChange: function(){
+			var nextState = {};
+			nextState["name"] =  this.refs.name.getDOMNode().value;
+			nextState["password"] =  this.refs.password.getDOMNode().value;
+			this.setState(nextState);
+		},
+		handleSubmit: function(){
+		  var user = {
+		    "name": this.state.name,
+		    "password": this.state.password
+		  };
+		  $.ajax({
+		    type: "POST",
+		      url: "/users",
+		      data: {"user": user}
+		  });
+		},
+		render: function(){
 			return (
-				<div>
-					<p>结果信息</p>
-					<div>方案一: 190分</div>
-					<div>方案三: 130分</div>
-					<div>方案二: 100分</div>
+				<div id="add-user">
+					<form>
+						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
+						密码:<input value={this.state.password} ref="password" onChange={this.handleChange}/><br />
+						<input type="submit" value="添加用户" onClick={this.handleSubmit}/>
+					</form>
 				</div>
 			);
 		}
 	});
+
+	var TabTitle = React.createClass({
+		render: function(){
+			return(
+				<ul className="etabs">
+					<li className="tab">
+						<a href="#add-standard">投标</a>
+					</li>
+					<li className="tab">
+						<a href="#add-user">添加专家</a>
+					</li>
+				</ul>
+			);
+		}
+	})
 
 	var Admin = React.createClass({
-		render: function() {
-			return (
-				<div>
+		componentDidMount: function(){
+			$('#tab-container').easytabs();
+		},
+		render: function(){
+			return(
+				<div id="tab-container" className="tab-container">
+					<TabTitle />
 					<StandardTable />
-					<ResultArea />
+					<AddUser />
 				</div>
 			);
 		}
 	});
 
-	React.render(<Admin />, document.getElementById('test'));
+	React.render(<Admin />, document.getElementById('admin'));
 })
