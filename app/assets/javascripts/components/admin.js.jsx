@@ -107,10 +107,43 @@ $(function() {
 					<li className="tab">
 						<a href="#add-user">添加专家</a>
 					</li>
+					<li className="tab">
+						<a href="#analyze">敏感度分析</a>
+					</li>
 				</ul>
 			);
 		}
 	})
+
+	var Result = React.createClass({
+		render: function(){
+			return(
+				<div>
+					<p>结果信息:</p>
+					方案一: 120分
+					方案二: 70分
+					方案三: 40分
+				</div>
+			);
+		}
+	});
+
+	var Analyze= React.createClass({
+		render: function() {
+			return (
+				<div id="analyze" className="analyze">
+					<form>
+						标准权重值:<br />
+						<input /><br />
+						<input /><br />
+						<input /><br />
+						<input type="submit" value="分析" onClick={this.handleSubmit}/>
+					</form>
+					<Result />
+				</div>
+			);
+		}
+	});
 
 	var Admin = React.createClass({
 		componentDidMount: function(){
@@ -122,6 +155,7 @@ $(function() {
 					<TabTitle />
 					<StandardTable />
 					<AddUser />
+					<Analyze />
 				</div>
 			);
 		}

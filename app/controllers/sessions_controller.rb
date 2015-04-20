@@ -6,10 +6,11 @@ class SessionsController < ApplicationController
   	user = User.authenticate(session_params[:name], session_params[:password])
   	if user
   		session[:user_id] = user.id
-  		redirect_to root_url, :notice => "Log in"
-  	else
-  		flash.now.alert = "Invalid name or password"
-  		redirect_to root_url
+      if(session_params[:name] == "admin")
+        redirect_to :controller=>'admin', :action=>'index'
+      else
+        redirect_to :controller=>'scores'
+      end
   	end
 
   end

@@ -1,9 +1,14 @@
 class ScoresController < ApplicationController
+  def index
+    redirect_to root_url if !current_user
+  end
   def new
     @score = Score.new
   end
   def create
-    score = post_params
+    post_params.each_pair do |key, value|
+      Score.create({standard:key, score:value})
+    end
   end
 
   private

@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
   def index
+    redirect_to root_url if current_user && current_user.name != 'admin'
   end
 
   def create
