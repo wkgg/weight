@@ -31105,3 +31105,7 @@ Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::
 
 
 Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 10:53:45 +0800
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "password_salt", "password_hash", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "admin"], ["password_salt", "$2a$10$iGmdimYD4Y12YK7hTRWx9u"], ["password_hash", "$2a$10$iGmdimYD4Y12YK7hTRWx9u/ErBNhc8moWXR.7esXB3is.gz21bocu"], ["created_at", "2015-04-20 06:20:07.164529"], ["updated_at", "2015-04-20 06:20:07.164529"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
