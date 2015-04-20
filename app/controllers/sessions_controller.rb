@@ -11,6 +11,8 @@ class SessionsController < ApplicationController
       else
         redirect_to :controller=>'scores'
       end
+    else
+      redirect_to :root
   	end
 
   end

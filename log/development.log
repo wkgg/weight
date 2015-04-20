@@ -31109,3 +31109,1294 @@ Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 a
   [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "password_salt", "password_hash", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "admin"], ["password_salt", "$2a$10$iGmdimYD4Y12YK7hTRWx9u"], ["password_hash", "$2a$10$iGmdimYD4Y12YK7hTRWx9u/ErBNhc8moWXR.7esXB3is.gz21bocu"], ["created_at", "2015-04-20 06:20:07.164529"], ["updated_at", "2015-04-20 06:20:07.164529"]]
   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+
+
+Started GET "/" for ::1 at 2015-04-20 14:34:23 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:34:23 +0800
+
+
+Started GET "/admin" for ::1 at 2015-04-20 14:34:28 +0800
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:57:35 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:57:35 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:36 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:57:37 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQIC7jtLyLArSlzR4qt0pdDA6QgOFJRf3sBjKxkdE54XHy44EsbpWJUskJiKi++irXhV6jFgQcz1W388wnwTcw==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "wky1991@gmail.com"]]
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/twer/Documents/Ruby/weightCoefficient/weight/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:57:54 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:54 +0800
+
+
+Started GET "/" for ::1 at 2015-04-20 14:57:55 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:57:55 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:57:56 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgFWy/49QQE1szH10cqP42F2GDaB+24UTsI40VoSnZWYHHod17Bg6YvV/by56hTkHM6k1L6Pu4dlWSTGgXOdeA==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "wky1991@gmail.com"]]
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template sessions/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/twer/Documents/Ruby/weightCoefficient/weight/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/twer/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (20.8ms)
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:17 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgFWy/49QQE1szH10cqP42F2GDaB+24UTsI40VoSnZWYHHod17Bg6YvV/by56hTkHM6k1L6Pu4dlWSTGgXOdeA==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "wky1991@gmail.com"]]
+Redirected to 
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `root_url_url' for #<SessionsController:0x007ff2a47674a8>):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:59:23 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 111ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:23 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:24 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ec++PDkmG28qErv2tHWuZpoFRup/MdhFwErCnRKNxBqD0pLqEKs6h5R0d7/cVTVh5736CEBFDdbr0d6KyezE9w==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "wky1991@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:59:24 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 103ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:24 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:25 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p1WsAYUg66FAjKP7u3xl8+0dwz2EMQNWzyZIxalwFis1SIDXrK3KSf7qb7LTXP70kKV/37tF1sXkvVTSchEWxg==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "wky1991@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:59:25 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 108ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:26 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCSN457lrLbWFjnYJ8RdhNQEuz2YqHX0FW8YKFBu2YhaOaE1t2iNXmhw9ZFP5MaDqbwH36fcoGc+9AQ/iw/ZZQ==", "name"=>"wky1991@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "wky1991@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:59:26 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 117ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:26 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:32 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MgumtNSwgslWEQp+Lh2HR6gMChLetToB9y+bdEndwFqgFopi/T2jIeh3xjdGPRxA1bS28OHB75LctIdjkrzAtw==", "name"=>"admin", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "admin"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+Redirected to http://localhost:3000/admin/index
+Redirected to 
+Completed 500 Internal Server Error in 73ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/sessions_controller.rb:15:in `create'
+
+
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/twer/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 14:59:54 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 14:59:54 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 14:59:59 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wGJMfCWWOiCzpM2GtWqjWgaIp68o0IF+vktfIwiXG8JSf2CqDBsbyA3CAc/dSjhdezAbTRekVO2V0EM00/YbLw==", "name"=>"admin", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "admin"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+Redirected to http://localhost:3000/admin/index
+Completed 302 Found in 74ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/index" for ::1 at 2015-04-20 14:59:59 +0800
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:00 +0800
+
+
+Started GET "/admin/index" for ::1 at 2015-04-20 15:00:07 +0800
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:07 +0800
+
+
+Started GET "/admin/index" for ::1 at 2015-04-20 15:00:08 +0800
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 119ms (Views: 118.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:08 +0800
+
+
+Started GET "/admin/index" for ::1 at 2015-04-20 15:00:09 +0800
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:09 +0800
+
+
+Started GET "/" for ::1 at 2015-04-20 15:00:11 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:12 +0800
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 15:00:19 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q02GEgdGSTVFVw43yyQlqXnQ/3GAfNdqJkgQmY6PVw7RUKrELsto3fsxwn6jBL6uBGhDk78IAvkN0wyOVe5X4w==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "123"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+Redirected to http://localhost:3000/scores
+Completed 302 Found in 73ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/scores" for ::1 at 2015-04-20 15:00:20 +0800
+Processing by ScoresController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered scores/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:00:20 +0800
+
+
+Started GET "/admin" for ::1 at 2015-04-20 15:39:31 +0800
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 107ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:39:31 +0800
+
+
+Started GET "/admin" for ::1 at 2015-04-20 15:40:13 +0800
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:13 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:14 +0800
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:21 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/score-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/admin-679ea20015515eaa6d4ce899dea2e1cb.css?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/react-90701d5cdb50785fca3952bd09f1aef9.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/react_ujs-ffd523a07d9b74f7ed694c484f76bfdd.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/components/scores-02953809f3ca3aed42d41c1da839e462.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/components-36f6f9df36b802c9a6d8aabcd652d7df.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/components/admin-91212010170e04c2303439ccdf187876.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/sessions-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/jquery.easytabs-db893a377a887a2520c8e5e6da8a973a.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/assets/users-46c9a194bd0668e67d57241f94473dc8.js?body=1" for ::1 at 2015-04-20 15:40:21 +0800
+
+
+Started GET "/admin" for ::1 at 2015-04-20 15:40:25 +0800
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:25 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 116ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 15:40:29 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J6ncDdeE9ltxReJID5x5Pcbrs+0XVBPiLlAF8dGy3Qiyn9kRiGbXnCaRLlXrOWS8+TNqLV/NWbO7BTeAPzEstA==", "name"=>"123", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "123"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+Redirected to http://localhost:3000/scores
+Completed 302 Found in 74ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/scores" for ::1 at 2015-04-20 15:40:29 +0800
+Processing by ScoresController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered scores/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for ::1 at 2015-04-20 15:40:33 +0800
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:33 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 121ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-04-20 15:40:37 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q1WqsCwWoYGD1zTp+UR/9sHApnP2GbZ9P5KSFUSp1X4+Y6+sc/SARtQD+PQd4WJ3/hh/s76A/Cyqx6Bkqiokwg==", "name"=>"admin", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Unpermitted parameters: utf8, authenticity_token, commit
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "admin"]]
+Unpermitted parameters: utf8, authenticity_token, commit
+Redirected to http://localhost:3000/admin/index
+Completed 302 Found in 74ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/index" for ::1 at 2015-04-20 15:40:37 +0800
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.1ms)
