@@ -1,9 +1,10 @@
 # config valid only for current version of Capistrano
+require "bundler/capistrano"
+require 'puma/capistrano'
 lock '3.4.0'
 
 set :application, 'weight'
 set :repo_url, 'git@github.com:wkgg/weight.git'
-set :rbenv_ruby, '2.2.2'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

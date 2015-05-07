@@ -77,11 +77,9 @@ GEM
     colorize (0.7.7)
     columnize (0.9.0)
     connection_pool (2.1.2)
-    daemons (1.1.9)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
-    eventmachine (1.0.4)
     execjs (2.2.2)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
@@ -113,6 +111,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    puma (2.11.2)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -170,10 +170,6 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    thin (1.6.3)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
-      rack (~> 1.0)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -200,13 +196,13 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pry
+  puma
   rails (= 4.2.0)
   react-rails (~> 1.0.0.pre)!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
   sqlite3
-  thin
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

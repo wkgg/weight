@@ -50,4 +50,4 @@ group :development, :test do
   gem 'capistrano-rails'  
 end
 
-gem 'thin'
+gem 'puma'
