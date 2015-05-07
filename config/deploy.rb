@@ -35,7 +35,7 @@ set :repo_url, 'git@github.com:wkgg/weight.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-set :puma_socket, "unix:///tmp/here.sock"
+set :puma_socket, "unix:///var/run/weight.sock"
 
 namespace :deploy do
 
