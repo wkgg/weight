@@ -1,6 +1,5 @@
 # config valid only for current version of Capistrano
-require "bundler/capistrano"
-require 'puma/capistrano'
+# require 'puma/capistrano'
 lock '3.4.0'
 
 set :application, 'weight'
