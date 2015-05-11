@@ -1,13 +1,12 @@
-<h1>Log in</h1>
-
-<%= form_tag sessions_path do %>
+<%= form_tag sessions_path, {:class => 'form-signin'} do %>
+  <h2 class="form-signin-heading">Please sign in</h2>
   <p>
     <%= label_tag :name %><br />
-    <%= text_field_tag :name, params[:name] %>
+    <%= text_field_tag :name, params[:name], {:class => 'form-control'} %>
   </p>
   <p>
     <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
+    <%= password_field_tag :password, params[:password], {:class => 'form-control'}%>
   </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 <% end %>
