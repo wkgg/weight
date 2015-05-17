@@ -158,6 +158,9 @@ $(function() {
 						<a href="#add-user">添加投标人</a>
 					</li>
 					<li className="tab">
+						<a href="#result">查看结果</a>
+					</li>
+					<li className="tab">
 						<a href="#analyze">敏感度分析</a>
 					</li>
 				</ul>
@@ -166,13 +169,26 @@ $(function() {
 	})
 
 	var Result = React.createClass({
+		getInitialState: function(){
+			return {result: []}
+		},
+		componentDidMount: function(){
+			$.ajax({
+				url: '/admin/result',
+				success:function(data) {
+					this.setState({
+            result: data
+        	});
+				}.bind(this)
+			});
+		},
 		render: function(){
 			return(
-				<div>
-					<p>结果信息:</p>
-					方案一: 120分
-					方案二: 70分
-					方案三: 40分
+				<div id="result">
+					<p>第二步修改后的权重系数分别为:</p>
+					w1: {this.state.result[0]}<br />
+					w2: {this.state.result[1]}<br />
+					w3: {this.state.result[2]}<br />
 				</div>
 			);
 		}
@@ -206,6 +222,7 @@ $(function() {
 					<StandardTable />
 					<AddExpert />
 					<AddUser />
+					<Result />
 					<Analyze />
 				</div>
 			);

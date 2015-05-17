@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
+  get 'admin/result' => 'admin#get_result'
+
   get 'admin/index'
 
   get 'welcome/index'
@@ -17,7 +19,6 @@ Rails.application.routes.draw do
   resources :users
   resources :scores
   resources :sessions
-
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
