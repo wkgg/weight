@@ -63,6 +63,41 @@ $(function() {
 		}
 	});
 
+	var AddExpert = React.createClass({
+		getInitialState: function(){
+			return{name:null, password:null}
+		},
+		handleChange: function(){
+			var nextState = {};
+			nextState["name"] =  this.refs.name.getDOMNode().value;
+			nextState["password"] =  this.refs.password.getDOMNode().value;
+			this.setState(nextState);
+		},
+		handleSubmit: function(){
+		  var user = {
+		    "name": this.state.name,
+		    "password": this.state.password,
+		    "role": 1
+		  };
+		  $.ajax({
+		    type: "POST",
+		      url: "/users",
+		      data: {"user": user}
+		  });
+		},
+		render: function(){
+			return (
+				<div id="add-expert">
+					<form>
+						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
+						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/><br />
+						<input type="submit" value="添加" onClick={this.handleSubmit}/>
+					</form>
+				</div>
+			);
+		}
+	});
+
 	var AddUser = React.createClass({
 		getInitialState: function(){
 			return{name:null, password:null}
@@ -76,7 +111,8 @@ $(function() {
 		handleSubmit: function(){
 		  var user = {
 		    "name": this.state.name,
-		    "password": this.state.password
+		    "password": this.state.password,
+		    "role": 0
 		  };
 		  $.ajax({
 		    type: "POST",
@@ -88,9 +124,9 @@ $(function() {
 			return (
 				<div id="add-user">
 					<form>
-						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
-						密码:<input value={this.state.password} ref="password" onChange={this.handleChange}/><br />
-						<input type="submit" value="添加用户" onClick={this.handleSubmit}/>
+						投标人:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
+						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/><br />
+						<input type="submit" value="添加" onClick={this.handleSubmit}/>
 					</form>
 				</div>
 			);
@@ -105,7 +141,10 @@ $(function() {
 						<a href="#add-standard">投标</a>
 					</li>
 					<li className="tab">
-						<a href="#add-user">添加专家</a>
+						<a href="#add-expert">添加专家</a>
+					</li>
+					<li className="tab">
+						<a href="#add-user">添加投标人</a>
 					</li>
 					<li className="tab">
 						<a href="#analyze">敏感度分析</a>
@@ -154,6 +193,7 @@ $(function() {
 				<div id="tab-container" className="tab-container">
 					<TabTitle />
 					<StandardTable />
+					<AddExpert />
 					<AddUser />
 					<Analyze />
 				</div>
