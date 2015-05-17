@@ -11,16 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517072014) do
+ActiveRecord::Schema.define(version: 20150517110142) do
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "scores", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "standard"
     t.string   "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "stand_names", force: :cascade do |t|
+    t.integer  "project_id"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "stand_names", ["project_id"], name: "index_stand_names_on_project_id"
+
   create_table "standards", force: :cascade do |t|
+    t.integer  "project_id"
     t.string   "stand12"
     t.string   "stand13"
     t.string   "stand23"

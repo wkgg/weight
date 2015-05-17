@@ -4,12 +4,19 @@ class AdminController < ApplicationController
   end
 
   def create
-    Standard.create(standard_params)
+    project = Project.create(name: project_params[:name])
+
+    binding.pry
+    project.stand_names.create(name: project_params[:standName][:stand1])
+    project.stand_names.create(name: project_params[:standName][:stand2])
+    project.stand_names.create(name: project_params[:standName][:stand3])
+
+    project.standards.create(project_params[:standardInfo])
   end
 
   private
-  def standard_params
-  	params.require(:standardInfo).permit(:stand12, :stand13, :stand23)
+  def project_params
+  	params.require(:project).permit(:name, :standName => [:stand1, :stand2, :stand3], :standardInfo => [:stand12, :stand13, :stand23])
   end
 
 end

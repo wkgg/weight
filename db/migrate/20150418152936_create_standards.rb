@@ -1,6 +1,7 @@
 class CreateStandards < ActiveRecord::Migration
   def change
     create_table :standards do |t|
+      t.belongs_to :project
       t.string :stand12
       t.string :stand13
       t.string :stand23
