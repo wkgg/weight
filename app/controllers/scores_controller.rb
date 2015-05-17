@@ -7,7 +7,7 @@ class ScoresController < ApplicationController
   end
   def create
     post_params.each_pair do |key, value|
-      Score.create({standard:key, score:value})
+      current_user.scores.create({standard:key, score:value})
     end
   end
 

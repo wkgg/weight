@@ -6,7 +6,6 @@ class AdminController < ApplicationController
   def create
     project = Project.create(name: project_params[:name])
 
-    binding.pry
     project.stand_names.create(name: project_params[:standName][:stand1])
     project.stand_names.create(name: project_params[:standName][:stand2])
     project.stand_names.create(name: project_params[:standName][:stand3])
