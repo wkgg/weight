@@ -64,16 +64,6 @@ $(function() {
 		}
 	});
 
-	var StandardTable = React.createClass({
-		render: function() {
-			return (
-				<div id="add-standard" clasName="add-stanrard">
-					<StandForm />
-				</div>
-			);
-		}
-	});
-
 	var AddExpert = React.createClass({
 		getInitialState: function(){
 			return{name:null, password:null}
@@ -149,9 +139,6 @@ $(function() {
 			return(
 				<ul className="etabs">
 					<li className="tab">
-						<a href="#add-standard">投标</a>
-					</li>
-					<li className="tab">
 						<a href="#add-expert">添加专家</a>
 					</li>
 					<li className="tab">
@@ -219,7 +206,6 @@ $(function() {
 			return(
 				<div id="tab-container" className="tab-container">
 					<TabTitle />
-					<StandardTable />
 					<AddExpert />
 					<AddUser />
 					<Result />

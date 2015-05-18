@@ -6,10 +6,12 @@ class SessionsController < ApplicationController
   	user = User.authenticate(session_params[:name], session_params[:password])
   	if user
   		session[:user_id] = user.id
-      if(session_params[:name] == "admin")
+      if(user.role == 2)
         redirect_to :controller=>'admin', :action=>'index'
-      else
+      elsif(user.role == 1)
         redirect_to :controller=>'scores'
+      else
+        redirect_to :controller=>'standards'
       end
     else
       redirect_to :root

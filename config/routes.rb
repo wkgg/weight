@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :users
   resources :scores
   resources :sessions
+  resources :standards
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
