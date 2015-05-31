@@ -21,6 +21,12 @@ class SessionsController < ApplicationController
 
   end
 
+  def destroy
+    session.delete(:user_id)
+    @current_user = nil
+    render :json => {:status => 200}
+  end
+
   private
   def session_params
   	params.permit(:name, :password, :role)

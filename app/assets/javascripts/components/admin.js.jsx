@@ -205,6 +205,7 @@ $(function() {
 		render: function(){
 			return(
 				<div id="tab-container" className="tab-container">
+					<ExitButton />
 					<TabTitle />
 					<AddExpert />
 					<AddUser />
