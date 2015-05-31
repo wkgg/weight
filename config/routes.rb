@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   resources :standards
 
   delete 'logout'  => 'sessions#destroy'
+  get 'users/role/:role' => 'users#get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -9,7 +9,7 @@ var ExitButton = React.createClass({
   },
   render: function(){
     return (
-      <button className="btn-danger exit" onClick={this.onClick}>退出</button>
+      <button className="btn btn-danger btn-sm exit" onClick={this.onClick}>退出</button>
     );
   }
 });

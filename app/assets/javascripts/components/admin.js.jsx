@@ -68,6 +68,7 @@ $(function() {
 		getInitialState: function(){
 			return{name:null, password:null}
 		},
+
 		handleChange: function(){
 			var nextState = {};
 			nextState["name"] =  this.refs.name.getDOMNode().value;
@@ -89,10 +90,11 @@ $(function() {
 		render: function(){
 			return (
 				<div id="add-expert">
+					<ShowUser url="/users/role/1" />
 					<form>
-						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
-						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/><br />
-						<input type="submit" value="添加" onClick={this.handleSubmit}/>
+						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/>
+						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/>
+						<input type="submit" className="btn btn-success" value="添加" onClick={this.handleSubmit}/>
 					</form>
 				</div>
 			);
@@ -124,10 +126,11 @@ $(function() {
 		render: function(){
 			return (
 				<div id="add-user">
+					<ShowUser url="/users/role/0" />
 					<form>
-						投标人:<input value={this.state.name} ref="name" onChange={this.handleChange}/><br />
-						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/><br />
-						<input type="submit" value="添加" onClick={this.handleSubmit}/>
+						投标人:<input value={this.state.name} ref="name" onChange={this.handleChange}/>
+						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/>
+						<input type="submit" className="btn btn-success" value="添加" onClick={this.handleSubmit}/>
 					</form>
 				</div>
 			);
@@ -139,10 +142,10 @@ $(function() {
 			return(
 				<ul className="etabs">
 					<li className="tab">
-						<a href="#add-expert">添加专家</a>
+						<a href="#add-expert">专家清单</a>
 					</li>
 					<li className="tab">
-						<a href="#add-user">添加投标人</a>
+						<a href="#add-user">投标人清单</a>
 					</li>
 					<li className="tab">
 						<a href="#result">查看结果</a>

@@ -4,10 +4,24 @@ class UsersController < ApplicationController
   end
 
   def create
-    user_params['role'] = user_params['role'].to_i if user_params['role']
-  	@user = User.new(user_params)
-  	@user.save
-    redirect_to :controller=>'admin', :action=>'index'
+    if user_params['name'] != ""
+      user_params['role'] = user_params['role'].to_i if user_params['role']
+    	@user = User.new(user_params)
+    	@user.save
+      redirect_to :controller=>'admin', :action=>'index'
+    end
+  end
+
+  def get
+    users = User.where(role: params['role'])
+    render json: users
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    if @user.destroy
+      render :json => {:status => 200}
+    end
   end
 
   private
