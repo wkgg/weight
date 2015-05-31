@@ -90,7 +90,7 @@ var ScoreTable = React.createClass({
 		return (
 			<div id="tab-container" className="tab-container">
 				<h1>投标管理系统</h1>
-        <ExitButton />
+        <LogoutButton />
 				<p>专家评分</p>
         <TabTitle1 />
         <StandForm1 />

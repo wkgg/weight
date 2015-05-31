@@ -1,4 +1,4 @@
-var ExitButton = React.createClass({
+var LogoutButton = React.createClass({
   onClick: function(){
     $.ajax({
       type: "DELETE",

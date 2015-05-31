@@ -208,7 +208,7 @@ $(function() {
 		render: function(){
 			return(
 				<div id="tab-container" className="tab-container">
-					<ExitButton />
+					<LogoutButton />
 					<TabTitle />
 					<AddExpert />
 					<AddUser />
