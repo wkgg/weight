@@ -7,8 +7,9 @@ class UsersController < ApplicationController
     if user_params['name'] != ""
       user_params['role'] = user_params['role'].to_i if user_params['role']
     	@user = User.new(user_params)
-    	@user.save
-      redirect_to :controller=>'admin', :action=>'index'
+    	if @user.save
+        render :json => {:status => 200}
+      end
     end
   end
 

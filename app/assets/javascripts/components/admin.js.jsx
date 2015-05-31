@@ -85,6 +85,8 @@ $(function() {
 		    type: "POST",
 		      url: "/users",
 		      data: {"user": user}
+		  }).done(function(){
+		  	location.reload();
 		  });
 		},
 		render: function(){
@@ -121,6 +123,8 @@ $(function() {
 		    type: "POST",
 		      url: "/users",
 		      data: {"user": user}
+		  }).done(function(){
+		  	location.reload();
 		  });
 		},
 		render: function(){
