@@ -1,9 +1,105 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
+
+var CompanyInformation = React.createClass({
+  getInitialState: function(){
+    return({
+      yingye:null, qiye:null, zhuce:null,
+      fading:null, ziben:null, gongsi:null,
+      dengji:null, chengli:null, qixian:null,
+      jingying:null, shuiwu:null, zuzhi:null,
+      daikuan:null, texu:null, lianxi:null,
+      youbian:null, dianhua:null, qiyezhu:null
+    });
+  },
+  handleChange: function(e){
+    var nextState = {};
+    nextState[e.target.name] = e.target.value;
+    this.setState(nextState);
+  },
+  render: function(){
+    return(
+      <div className="company-basic-info">
+        <p>  企业基本信息</p>
+        <table>
+          <tr>
+            <td>营业执照号</td>
+            <td><input name="yingye" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>企业名称</td>
+            <td><input name="qiye" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>注册地址</td>
+            <td><input name="zhuce" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>法定代表人</td>
+            <td><input name="fading" onChange={this.handleChange}/></td>
+            <td>注册资本</td>
+            <td><input name="ziben" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>公司类型</td>
+            <td><input name="gongsi" onChange={this.handleChange}/></td>
+            <td>登记机关</td>
+            <td><input name="dengji" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>成立日期</td>
+            <td><input name="chengli" onChange={this.handleChange}/></td>
+            <td>营业期限</td>
+            <td><input name="qixian" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>经营范围</td>
+            <td><input name="jingying" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>税务登记账号</td>
+            <td><input name="shuiwu" onChange={this.handleChange}/></td>
+            <td>组织机构代码证号</td>
+            <td><input name="zuzhi" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>贷款卡号码</td>
+            <td><input name="daikuan" onChange={this.handleChange}/></td>
+            <td>特许经营许可证号码</td>
+            <td><input name="texu" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>联系地址</td>
+            <td><input name="lianxi" onChange={this.handleChange}/></td>
+            <td>邮编</td>
+            <td><input name="youbian" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>电话、传真</td>
+            <td><input name="dianhua" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>企业主家</td>
+            <td><input name="qiyezhu" onChange={this.handleChange}/></td>
+          </tr>
+        </table>
+      </div>
+    );
+  }
+});
+
 var StandForm = React.createClass({
   getInitialState: function() {
-    return {projectName:null, stand1Name:null, stand2Name:null, stand3Name:null, stand12:null, stand13: null, stand21: null, stand23: null, stand31: null, stand32: null}
+    return {projectName:null, stand1Name:null, stand2Name:null, stand3Name:null, 
+      stand12:null, stand13: null, stand21: null, stand23: null, stand31: null, stand32: null,
+      yingye:null, qiye:null, zhuce:null,
+      fading:null, ziben:null, gongsi:null,
+      dengji:null, chengli:null, qixian:null,
+      jingying:null, shuiwu:null, zuzhi:null,
+      daikuan:null, texu:null, lianxi:null,
+      youbian:null, dianhua:null, qiyezhu:null
+    }
   },
   handleChange: function(event){
     var nextState = {};
@@ -28,6 +124,25 @@ var StandForm = React.createClass({
   handleSubmit: function(e){
     var project = {
       "name": this.state.projectName,
+      "yingye":this.state.yingye,
+      "qiye":this.state.qiye,
+      "zhuce":this.state.zhuce,
+      "fading":this.state.fading,
+      "ziben":this.state.ziben,
+      "gongsi":this.state.gongsi,
+      "dengji":this.state.dengji,
+      "chengli":this.state.chengli,
+      "qixian":this.state.qixian,
+      "jingying":this.state.jingying,
+      "shuiwu":this.state.shuiwu,
+      "zuzhi":this.state.zuzhi,
+      "daikuan":this.state.daikuan,
+      "texu":this.state.texu,
+      "lianxi":this.state.lianxi,
+      "youbian":this.state.youbian,
+      "dianhua":this.state.dianhua,
+      "qiyezhu":this.state.qiyezhu,
+      
       "standName": {
         "stand1": this.state.stand1Name,
         "stand2": this.state.stand2Name,
@@ -54,6 +169,71 @@ var StandForm = React.createClass({
         项目评估标准:<input value={this.state.stand1Name} name="stand1Name" onChange={this.handleChange}/>
                   <input value={this.state.stand2Name} name="stand2Name" onChange={this.handleChange}/>
                   <input value={this.state.stand3Name} name="stand3Name" onChange={this.handleChange}/><br />
+        <div className="company-basic-info">
+        <p>  企业基本信息</p>
+        <table>
+          <tr>
+            <td>营业执照号</td>
+            <td><input name="yingye" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>企业名称</td>
+            <td><input name="qiye" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>注册地址</td>
+            <td><input name="zhuce" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>法定代表人</td>
+            <td><input name="fading" onChange={this.handleChange}/></td>
+            <td>注册资本</td>
+            <td><input name="ziben" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>公司类型</td>
+            <td><input name="gongsi" onChange={this.handleChange}/></td>
+            <td>登记机关</td>
+            <td><input name="dengji" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>成立日期</td>
+            <td><input name="chengli" onChange={this.handleChange}/></td>
+            <td>营业期限</td>
+            <td><input name="qixian" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>经营范围</td>
+            <td><input name="jingying" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>税务登记账号</td>
+            <td><input name="shuiwu" onChange={this.handleChange}/></td>
+            <td>组织机构代码证号</td>
+            <td><input name="zuzhi" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>贷款卡号码</td>
+            <td><input name="daikuan" onChange={this.handleChange}/></td>
+            <td>特许经营许可证号码</td>
+            <td><input name="texu" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>联系地址</td>
+            <td><input name="lianxi" onChange={this.handleChange}/></td>
+            <td>邮编</td>
+            <td><input name="youbian" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>电话、传真</td>
+            <td><input name="dianhua" onChange={this.handleChange}/></td>
+          </tr>
+          <tr>
+            <td>企业主家</td>
+            <td><input name="qiyezhu" onChange={this.handleChange}/></td>
+          </tr>
+        </table>
+      </div>
         标准权重信息:<br />
         <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange12} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange13} /><br />
         <input value={this.state.stand21} name="stand21" onChange={this.handleChange12} /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange23} /><br />

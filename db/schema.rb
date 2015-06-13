@@ -11,12 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517110142) do
+ActiveRecord::Schema.define(version: 20150613160039) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "yingye"
+    t.string   "qiye"
+    t.string   "zhuce"
+    t.string   "fading"
+    t.string   "ziben"
+    t.string   "gongsi"
+    t.string   "dengji"
+    t.string   "chengli"
+    t.string   "qixian"
+    t.string   "jingying"
+    t.string   "shuiwu"
+    t.string   "zuzhi"
+    t.string   "daikuan"
+    t.string   "texu"
+    t.string   "lianxi"
+    t.string   "youbian"
+    t.string   "dianhua"
+    t.string   "qiyezhu"
   end
 
   create_table "scores", force: :cascade do |t|
