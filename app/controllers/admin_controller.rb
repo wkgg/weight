@@ -4,7 +4,6 @@ class AdminController < ApplicationController
   end
 
   def create
-    binding.pry
     project = Project.create(name: project_params[:name],yingye: project_params[:yingye],qiye: project_params[:qiye],zhuce: project_params[:zhuce],fading: project_params[:fading],ziben: project_params[:ziben],gongsi: project_params[:gongsi],dengji: project_params[:dengji],chengli: project_params[:chengli],qixian: project_params[:qixian],jingying: project_params[:jingying],shuiwu: project_params[:shuiwu],zuzhi: project_params[:zuzhi],daikuan: project_params[:daikuan],texu: project_params[:texu],lianxi: project_params[:lianxi],youbian: project_params[:youbian],dianhua: project_params[:dianhua],qiyezhu: project_params[:qiyezhu])
 
     project.stand_names.create(name: project_params[:standName][:stand1])
@@ -12,6 +11,11 @@ class AdminController < ApplicationController
     project.stand_names.create(name: project_params[:standName][:stand3])
 
     project.standards.create(project_params[:standardInfo])
+  end
+
+  def get_standard
+    project = Project.last
+    render json: project.stand_names.map {|p| p.name}        
   end
 
   def get_result

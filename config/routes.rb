@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'admin/result' => 'admin#get_result'
 
+  get 'admin/standard' => 'admin#get_standard'
+
   get 'admin/index'
 
   get 'welcome/index'

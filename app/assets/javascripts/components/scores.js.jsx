@@ -6,7 +6,8 @@ var StandForm1 = React.createClass({
     return({
       score11:null, score12:null, score13:null,
       score21:null, score22:null, score33:null,
-      score31:null, score32:null, score33:null
+      score31:null, score32:null, score33:null,
+      standard: ["0","0", "0"]
     });
   },
 	handleSubmit: function(){
@@ -27,10 +28,21 @@ var StandForm1 = React.createClass({
     nextState[event.target.name] = e.target.value;
     this.setState(nextState);
   },
+  componentWillMount: function(){
+    $.ajax({
+      url: '/admin/standard',
+      success:function(data) {
+        this.setState({
+          standard: data
+        });
+      }.bind(this)
+    });
+  },
 	render: function(){
 		return (
       <div id="score" className="score">
   			<form>
+          <div className="standard">{this.state.standard[0]}</div><div className="standard">{this.state.standard[1]}</div><div className="standard">{this.state.standard[2]}</div><br />
           方案一<input name="score11" onChange={this.handleChange}/><input name="score12" onChange={this.handleChange}/><input name="score13" onChange={this.handleChange}/><br />
           方案二<input name="score21" onChange={this.handleChange}/><input name="score22" onChange={this.handleChange}/><input name="score23" onChange={this.handleChange}/><br />
           方案三<input name="score31" onChange={this.handleChange}/><input name="score32" onChange={this.handleChange}/><input name="score33" onChange={this.handleChange}/><br />
