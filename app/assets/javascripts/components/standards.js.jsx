@@ -106,21 +106,6 @@ var StandForm = React.createClass({
     nextState[event.target.name] = event.target.value;
     this.setState(nextState);
   },
-  handleChange12: function(e){
-    var nextState = {};
-    nextState["stand21"] = nextState["stand12"] = e.target.value;
-    this.setState(nextState);
-  },
-  handleChange13: function(e){
-    var nextState = {};
-    nextState["stand31"] = nextState["stand13"] = e.target.value;
-    this.setState(nextState);
-  },
-  handleChange23: function(e){
-    var nextState = {};
-    nextState["stand23"] = nextState["stand32"] = e.target.value;
-    this.setState(nextState);
-  },
   handleSubmit: function(e){
     var project = {
       "name": this.state.projectName,
@@ -235,9 +220,9 @@ var StandForm = React.createClass({
         </table>
       </div>
         标准权重信息:<br />
-        <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange12} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange13} /><br />
-        <input value={this.state.stand21} name="stand21" onChange={this.handleChange12} /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange23} /><br />
-        <input value={this.state.stand31} name="stand31" onChange={this.handleChange13} /><input value={this.state.stand32} name="stand32" onChange={this.handleChange23} /><input value = "1" /><br />
+        <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><br />
+        <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><br />
+        <input value="***" name="stand31" /><input value="***" name="stand32" /><input value = "1" /><br />
         <input type="submit" value="投标" onClick={this.handleSubmit}/>
       </form>
     );
