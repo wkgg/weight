@@ -31,7 +31,9 @@ class AdminController < ApplicationController
     w2 = temp1 / (temp1 + temp2 + temp3)
     w3 = temp1 / (temp1 + temp2 + temp3)
     #second step
-    wx =  [[0, 0, 0], [0, 0, 0], [0, 0, 0]] 
+    users = User.where(role: 1)
+    wx =  [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    s =  [] 
     users.each_index do |index|
       k = 1/Math.log(3)
 
@@ -52,11 +54,36 @@ class AdminController < ApplicationController
 
       wx[index][0] = (1 - h11) / (1 - h11 + 1 - h12 + 1 - h13)
       wx[index][1] = (1 - h12) / (1 - h11 + 1 - h12 + 1 - h13)
-      ex[index][2] = (1 - h13) / (1 - h11 + 1 - h12 + 1 - h13)
+      wx[index][2] = (1 - h13) / (1 - h11 + 1 - h12 + 1 - h13)
+
+      temp = []
+      temp[0] = wx[index][0] * (users[index].scores.where(standard: "score11").first.score).to_i
+      temp[1] = wx[index][1] * (users[index].scores.where(standard: "score12").first.score).to_i
+      temp[2] = wx[index][2] * (users[index].scores.where(standard: "score13").first.score).to_i
+
+      s.push temp
     end
 
-    s11 = users.first
-    render json: [w11, w12, w13]
+    #third step
+    r11 = 1
+    r12 = 1 - 1/4.0 * ((s[0][0]-s[1][0]) ** 2 + (s[0][1] - s[1][1]) ** 2 + (s[0][2] - s[1][2]) ** 2)
+    r13 = 1 - 1/4.0 * ((s[0][0]-s[2][0]) ** 2 + (s[0][1] - s[2][1]) ** 2 + (s[0][2] - s[2][2]) ** 2)
+    r21 = 1 - 1/4.0 * ((s[1][0]-s[0][0]) ** 2 + (s[1][1] - s[0][1]) ** 2 + (s[1][2] - s[0][2]) ** 2) 
+    r22 = 1 
+    r23 = 1 - 1/4.0 * ((s[1][0]-s[2][0]) ** 2 + (s[1][1] - s[2][1]) ** 2 + (s[1][2] - s[2][2]) ** 2)
+    r31 = 1 - 1/4.0 * ((s[2][0]-s[0][0]) ** 2 + (s[2][1] - s[0][1]) ** 2 + (s[2][2] - s[0][2]) ** 2)
+    r32 = 1 - 1/4.0 * ((s[2][0]-s[1][0]) ** 2 + (s[2][1] - s[1][1]) ** 2 + (s[2][2] - s[1][2]) ** 2)
+    r33 = 1
+    sum = (r12 - 1 + r13 - 1) + (r21 - 1 + r23 - 1) + (r31 - 1 + r32 -1)
+    w1 = (r12 - 1 + r13 - 1) / sum
+    w2 = (r21 - 1 + r23 - 1) / sum
+    w3 = (r21 - 1 + r23 - 1) / sum
+
+    #forth step
+    v1 = s[0][0] * w1 + s[1][0] * w1 + s[2][0] * w1
+    v2 = s[0][1] * w2 + s[1][1] * w2 + s[2][1] * w2
+    v3 = s[0][2] * w3 + s[1][2] * w3 + s[2][2] * w3
+    render json: [v1, v2, v3]
   end
 
   private

@@ -70,10 +70,10 @@ var Result1 = React.createClass({
   render: function(){
     return(
       <div id="result1" className="result1">
-        <p>第二步修改后的权重系数分别为:</p>
-        w1: {this.state.result[0]}<br />
-        w2: {this.state.result[1]}<br />
-        w3: {this.state.result[2]}<br />
+        <p>最终得分为:</p>
+        方案1: {this.state.result[0]}<br />
+        方案2: {this.state.result[1]}<br />
+        方案3: {this.state.result[2]}<br />
       </div>
     );
   }
