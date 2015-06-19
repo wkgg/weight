@@ -18,12 +18,36 @@ class AdminController < ApplicationController
     render json: project.stand_names.map {|p| p.name}        
   end
 
-  def get_result
-    # first step
+  def get_result 
     project = Project.last
     stand12 = project.standards.first.stand12.to_r
     stand13 = project.standards.first.stand13.to_r
-    stand23 = project.standards.first.stand23.to_r 
+    stand23 = project.standards.first.stand23.to_r
+    result = handle_result stand12,  stand13, stand23
+
+    render json: result
+  end
+
+  def result_analyze
+    stand12 = analyze_params[:stand12].to_r
+    stand13 = analyze_params[:stand13].to_r
+    stand23 = analyze_params[:stand23].to_r
+    result = handle_result stand12,  stand13, stand23
+
+    render json: result
+  end
+
+  private
+  def project_params
+  	params.require(:project).permit(:name, :yingye,:qiye,:zhuce,:fading,:ziben,:gongsi,:dengji,:chengli,:qixian,:jingying,:shuiwu,:zuzhi,:daikuan,:texu,:lianxi,:youbian,:dianhua,:qiyezhu, :standName => [:stand1, :stand2, :stand3], :standardInfo => [:stand12, :stand13, :stand23])
+  end
+
+  def analyze_params
+    params.require(:standardInfo).permit(:stand12, :stand13, :stand23)
+  end 
+
+  def handle_result (stand12, stand13, stand23)
+     # first step
     temp1 = (1 + stand12 + stand13) ** (1.0 / 3)
     temp2 = ((1 / stand12) + 1 + (1 / stand23)) ** (1.0 / 3)
     temp3 = ((1 / stand13) + (1 / stand23) + 1) ** (1.0 / 3)
@@ -83,12 +107,8 @@ class AdminController < ApplicationController
     v1 = s[0][0] * w1 + s[1][0] * w1 + s[2][0] * w1
     v2 = s[0][1] * w2 + s[1][1] * w2 + s[2][1] * w2
     v3 = s[0][2] * w3 + s[1][2] * w3 + s[2][2] * w3
-    render json: [v1, v2, v3]
-  end
 
-  private
-  def project_params
-  	params.require(:project).permit(:name, :yingye,:qiye,:zhuce,:fading,:ziben,:gongsi,:dengji,:chengli,:qixian,:jingying,:shuiwu,:zuzhi,:daikuan,:texu,:lianxi,:youbian,:dianhua,:qiyezhu, :standName => [:stand1, :stand2, :stand3], :standardInfo => [:stand12, :stand13, :stand23])
+    return [v1, v2, v3]
   end
 
 end

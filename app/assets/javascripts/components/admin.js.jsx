@@ -189,17 +189,47 @@ $(function() {
 	});
 
 	var Analyze= React.createClass({
+		getInitialState: function(){
+			return({
+				stand12:null, stand13: null, stand23: null, result:[]
+			});
+		},
+		handleSubmit: function(){
+			var standardInfo =  {
+        "stand12": this.state.stand12,
+        "stand13": this.state.stand13,
+        "stand23": this.state.stand23
+      }
+			$.ajax({
+	      type: "POST",
+	        url: "/admin/result-analyze",
+	        data: {"standardInfo": standardInfo},
+					success: function(data){
+						this.setState({result: data});
+					}.bind(this)	        
+	    })
+		},
+		handleChange: function(e){
+			var nextState = {}
+			nextState[e.target.name] = e.target.value
+			this.setState(nextState);
+		},
 		render: function() {
 			return (
 				<div id="analyze" className="analyze">
 					<form>
-						标准权重值:<br />
-						<input /><br />
-						<input /><br />
-						<input /><br />
-						<input type="submit" value="分析" onClick={this.handleSubmit}/>
-					</form>
-					<Result />
+		        标准权重信息:<br />
+		        <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><br />
+		        <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><br />
+		        <input value="***" name="stand31" /><input value="***" name="stand32" /><input value = "1" /><br />
+		      </form>
+		      <button onClick={this.handleSubmit}>分析</button>
+		      <div>
+						<p>分析结果:</p>
+						方案1: {this.state.result[0]}<br />
+						方案2: {this.state.result[1]}<br />
+						方案3: {this.state.result[2]}<br />
+					</div>
 				</div>
 			);
 		}
