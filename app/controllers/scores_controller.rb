@@ -13,6 +13,6 @@ class ScoresController < ApplicationController
 
   private
   def post_params
-    params.require(:score).permit(:score11, :score12, :score13, :score21, :score22, :score23, :score31, :score32, :score33)
+    params.require(:score).permit(:score11, :score12, :score13, :score14, :score15, :score21, :score22, :score23,:score24, :score25, :score31, :score32, :score33, :score34, :score35)
   end
 end

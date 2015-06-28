@@ -198,7 +198,14 @@ $(function() {
 			var standardInfo =  {
         "stand12": this.state.stand12,
         "stand13": this.state.stand13,
-        "stand23": this.state.stand23
+        "stand14": this.state.stand14,
+        "stand15": this.state.stand15,
+        "stand23": this.state.stand23,
+        "stand24": this.state.stand24,
+        "stand25": this.state.stand25,
+        "stand34": this.state.stand34,
+        "stand35": this.state.stand35,
+        "stand45": this.state.stand45
       }
 			$.ajax({
 	      type: "POST",
@@ -219,9 +226,11 @@ $(function() {
 				<div id="analyze" className="analyze">
 					<form>
 		        标准权重信息:<br />
-		        <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><br />
-		        <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><br />
-		        <input value="***" name="stand31" /><input value="***" name="stand32" /><input value = "1" /><br />
+		       <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><input value={this.state.stand14} name="stand14" onChange={this.handleChange} /><input value={this.state.stand15} name="stand15" onChange={this.handleChange} /><br />
+        	 <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><input value={this.state.stand24} name="stand24" onChange={this.handleChange} /><input value={this.state.stand25} name="stand25" onChange={this.handleChange} /><br />
+           <input value="***" name="stand31" /><input value="***" name="stand32" /><input value = "1" /><input value={this.state.stand34} name="stand34" onChange={this.handleChange} /><input value={this.state.stand35} name="stand35" onChange={this.handleChange} /><br />
+        	 <input value="***" name="stand41" /><input value="***" name="stand42" /><input value = "***" name="stand43"/><input value = "1" name="stand44" /><input value={this.state.stand45} name="stand45" onChange={this.handleChange} /><br />
+        	 <input value="***" name="stand51" /><input value="***" name="stand52" /><input value = "***" name="stand53"/><input value = "***" name="stand54" /><input value="1" name="stand55" /><br />
 		      </form>
 		      <button onClick={this.handleSubmit}>分析</button>
 		      <div>
