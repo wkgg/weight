@@ -17,6 +17,11 @@ class AdminController < ApplicationController
     render json: project.stand_names.map {|p| p.name}        
   end
 
+  def get_project
+    project = Project.last
+    render json: project
+  end
+
   def get_result 
     project = Project.last
     stand12 = project.standards.first.stand12.to_r
@@ -73,7 +78,7 @@ class AdminController < ApplicationController
     w5 = temp5 / (temp1 + temp2 + temp3 + temp4 + temp5)
     #second step
     users = User.where(role: 1)
-    wx =  [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    wx =  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
     s =  []
     users.each_index do |index|
       k = 1/Math.log(PlanNumber)
@@ -110,12 +115,20 @@ class AdminController < ApplicationController
       wx[index][3] = (1 - h4) / sum
       wx[index][4] = (1 - h5) / sum
 
+      weight =  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+      sum_weight = wx[index][0] * w1 + wx[index][1] * w2 + wx[index][2] * w3 + wx[index][3] * w4 + wx[index][4] * w5 
+      weight[index][0] = wx[index][0] * w1 / sum_weight
+      weight[index][1] = wx[index][1] * w2 / sum_weight
+      weight[index][2] = wx[index][2] * w3 / sum_weight
+      weight[index][3] = wx[index][3] * w4 / sum_weight
+      weight[index][4] = wx[index][4] * w5 / sum_weight
+
       temp = []
-      temp[0] = wx[index][0] * (users[index].scores.where(standard: "score11").first.score).to_i
-      temp[1] = wx[index][1] * (users[index].scores.where(standard: "score12").first.score).to_i
-      temp[2] = wx[index][2] * (users[index].scores.where(standard: "score13").first.score).to_i
-      temp[3] = wx[index][3] * (users[index].scores.where(standard: "score14").first.score).to_i
-      temp[4] = wx[index][4] * (users[index].scores.where(standard: "score15").first.score).to_i
+      temp[0] = weight[index][0] * (users[index].scores.where(standard: "score11").first.score).to_i
+      temp[1] = weight[index][1] * (users[index].scores.where(standard: "score12").first.score).to_i
+      temp[2] = weight[index][2] * (users[index].scores.where(standard: "score13").first.score).to_i
+      temp[3] = weight[index][3] * (users[index].scores.where(standard: "score14").first.score).to_i
+      temp[4] = weight[index][4] * (users[index].scores.where(standard: "score15").first.score).to_i
 
       s.push temp
     end

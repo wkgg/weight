@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'admin/result' => 'admin#get_result'
 
   get 'admin/standard' => 'admin#get_standard'
+
+  get 'admin/project' => 'admin#get_project'
   
   post 'admin/result-analyze' => 'admin#result_analyze'
 

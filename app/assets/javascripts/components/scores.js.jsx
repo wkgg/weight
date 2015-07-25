@@ -41,6 +41,7 @@ var StandForm1 = React.createClass({
 	render: function(){
 		return (
       <div id="score" className="score">
+        <ProjectInfo />
   			<form>
           <div className="standard">{this.state.standard[0]}</div><div className="standard">{this.state.standard[1]}</div><div className="standard">{this.state.standard[2]}</div><div className="standard">{this.state.standard[3]}</div><div className="standard">{this.state.standard[4]}</div><br />
           方案一<input name="score11" onChange={this.handleChange}/><input name="score12" onChange={this.handleChange}/><input name="score13" onChange={this.handleChange}/><input name="score14" onChange={this.handleChange}/><input name="score15" onChange={this.handleChange}/><br />

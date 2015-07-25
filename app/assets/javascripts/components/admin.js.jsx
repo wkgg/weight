@@ -179,6 +179,7 @@ $(function() {
 		render: function(){
 			return(
 				<div id="result">
+				  <ProjectInfo />
 					<p>最终得分为:</p>
 					方案1: {this.state.result[0]}<br />
 					方案2: {this.state.result[1]}<br />
