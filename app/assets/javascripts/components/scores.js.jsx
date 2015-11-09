@@ -25,7 +25,7 @@ var StandForm1 = React.createClass({
 	},
   handleChange: function(e){
     var nextState = {};
-    nextState[event.target.name] = e.target.value;
+    nextState[e.target.name] = e.target.value;
     this.setState(nextState);
   },
   componentWillMount: function(){

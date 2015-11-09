@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
-gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'react-rails'
 gem "bcrypt-ruby", :require => "bcrypt"
 
 # Use ActiveModel has_secure_password
@@ -53,5 +53,5 @@ group :development, :test do
   gem 'capistrano3-puma'
 end
 
-gem 'pry'
+gem 'pry-byebug'
 gem 'puma'
