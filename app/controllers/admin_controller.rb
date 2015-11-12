@@ -5,7 +5,7 @@ class AdminController < ApplicationController
   end
 
   def create
-    project = Project.create(name: project_params[:name],yingye: project_params[:yingye],qiye: project_params[:qiye],zhuce: project_params[:zhuce],fading: project_params[:fading],ziben: project_params[:ziben],gongsi: project_params[:gongsi],dengji: project_params[:dengji],chengli: project_params[:chengli],qixian: project_params[:qixian],jingying: project_params[:jingying],shuiwu: project_params[:shuiwu],zuzhi: project_params[:zuzhi],daikuan: project_params[:daikuan],texu: project_params[:texu],lianxi: project_params[:lianxi],youbian: project_params[:youbian],dianhua: project_params[:dianhua],qiyezhu: project_params[:qiyezhu])
+    project = Project.create(name: project_params[:name],yingye: project_params[:yingye],qiye: project_params[:qiye],zhuce: project_params[:zhuce],fading: project_params[:fading],ziben: project_params[:ziben],gongsi: project_params[:gongsi],dengji: project_params[:dengji],chengli: project_params[:chengli],qixian: project_params[:qixian],jingying: project_params[:jingying],shuiwu: project_params[:shuiwu],zuzhi: project_params[:zuzhi],daikuan: project_params[:daikuan],texu: project_params[:texu],lianxi: project_params[:lianxi],youbian: project_params[:youbian],dianhua: project_params[:dianhua],qiyezhu: project_params[:qiyezhu], file: project_params[:file])
 
     project_params[:standName].each_value {|value| project.stand_names.create(name: value)}
 
@@ -57,7 +57,7 @@ class AdminController < ApplicationController
 
   private
   def project_params
-  	params.require(:project).permit(:name, :yingye,:qiye,:zhuce,:fading,:ziben,:gongsi,:dengji,:chengli,:qixian,:jingying,:shuiwu,:zuzhi,:daikuan,:texu,:lianxi,:youbian,:dianhua,:qiyezhu, :standName => [:stand1, :stand2, :stand3, :stand4, :stand5], :standardInfo => [:stand12, :stand13, :stand14, :stand15, :stand23, :stand24, :stand25, :stand34, :stand35, :stand45])
+  	params.require(:project).permit(:name, :file, :yingye,:qiye,:zhuce,:fading,:ziben,:gongsi,:dengji,:chengli,:qixian,:jingying,:shuiwu,:zuzhi,:daikuan,:texu,:lianxi,:youbian,:dianhua,:qiyezhu, :standName => [:stand1, :stand2, :stand3, :stand4, :stand5], :standardInfo => [:stand12, :stand13, :stand14, :stand15, :stand23, :stand24, :stand25, :stand34, :stand35, :stand45])
   end
 
   def analyze_params

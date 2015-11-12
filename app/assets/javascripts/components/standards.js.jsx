@@ -10,7 +10,8 @@ var CompanyInformation = React.createClass({
       dengji:null, chengli:null, qixian:null,
       jingying:null, shuiwu:null, zuzhi:null,
       daikuan:null, texu:null, lianxi:null,
-      youbian:null, dianhua:null, qiyezhu:null
+      youbian:null, dianhua:null, qiyezhu:null,
+      data_uri
     });
   },
   handleChange: function(e){
@@ -106,6 +107,19 @@ var StandForm = React.createClass({
     nextState[event.target.name] = event.target.value;
     this.setState(nextState);
   },
+  handleFile: function(e) {
+    var self = this;
+    var reader = new FileReader();
+    var file = e.target.files[0];
+
+    reader.onload = function(upload) {
+      self.setState({
+        data_uri: upload.target.result,
+      });
+    }
+
+    reader.readAsDataURL(file);
+  },
   handleSubmit: function(e){
     var project = {
       "name": this.state.projectName,
@@ -146,7 +160,8 @@ var StandForm = React.createClass({
         "stand34": this.state.stand34,
         "stand35": this.state.stand35,
         "stand45": this.state.stand45
-      }
+      },
+      "file": this.state.data_uri
     }
 
     $.ajax({
@@ -158,7 +173,7 @@ var StandForm = React.createClass({
   },
   render: function(){
     return (
-      <form>
+      <form encType="multipart/form-data">
         项目名称:<input value={this.state.projectName} name="projectName" onChange={this.handleChange}/><br />
         项目评估标准:<input value={this.state.stand1Name} name="stand1Name" onChange={this.handleChange}/>
                   <input value={this.state.stand2Name} name="stand2Name" onChange={this.handleChange}/>
@@ -230,6 +245,7 @@ var StandForm = React.createClass({
           </tr>
         </table>
       </div>
+        <input type="file" onChange={this.handleFile} />
         标准权重信息:<br />
         <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><input value={this.state.stand14} name="stand14" onChange={this.handleChange} /><input value={this.state.stand15} name="stand15" onChange={this.handleChange} /><br />
         <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><input value={this.state.stand24} name="stand24" onChange={this.handleChange} /><input value={this.state.stand25} name="stand25" onChange={this.handleChange} /><br />

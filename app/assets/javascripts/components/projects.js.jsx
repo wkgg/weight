@@ -79,6 +79,10 @@ var ProjectInfo = React.createClass({
             <td>企业主家</td>
             <td><input name="qiyezhu" value={this.state.project.qiyezhu}/></td>
           </tr>
+          <tr>
+            <td>投标文件</td>
+            <td><a href={this.state.project.file}>点我</a></td>
+          </tr>
         </table>
       </div>
     );
