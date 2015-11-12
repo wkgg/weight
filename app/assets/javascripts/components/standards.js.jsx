@@ -245,7 +245,7 @@ var StandForm = React.createClass({
           </tr>
         </table>
       </div>
-        <input type="file" onChange={this.handleFile} />
+        <td>投标文件</td><input type="file" onChange={this.handleFile} />
         标准权重信息:<br />
         <input value="1" /><input value={this.state.stand12} name="stand12" onChange={this.handleChange} /><input value={this.state.stand13} name="stand13" onChange={this.handleChange} /><input value={this.state.stand14} name="stand14" onChange={this.handleChange} /><input value={this.state.stand15} name="stand15" onChange={this.handleChange} /><br />
         <input value="***" name="stand21" /><input value="1" /><input value={this.state.stand23} name="stand23" onChange={this.handleChange} /><input value={this.state.stand24} name="stand24" onChange={this.handleChange} /><input value={this.state.stand25} name="stand25" onChange={this.handleChange} /><br />
