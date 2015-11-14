@@ -1,4 +1,4 @@
-<h1>投标管理系统</h1>
+<h1>多方案多属性多专家排序系统</h1>
 <h3 class="form-signin-heading">请登陆</h3>
 
 <div class="container">
@@ -7,7 +7,7 @@
 <div id="content">
     <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
         <li class="active"><a href="#administrator" data-toggle="tab">管理员</a></li>
-        <li><a href="#expert" data-toggle="tab">专家</a></li>
+        <li><a href="#expert" data-toggle="tab">评标人</a></li>
         <li><a href="#toubiao" data-toggle="tab">投标人</a></li>
     </ul>
     <div id="my-tab-content" class="tab-content">
@@ -28,7 +28,7 @@
         <div class="tab-pane" id="expert">
           <%= form_tag sessions_path, {:class => 'form-signin'} do %>
             <p>
-              <%= label_tag :专家 %><br />
+              <%= label_tag :评标人 %><br />
               <%= text_field_tag :name, params[:name], {:class => 'form-control'} %>
             </p>
             <p>

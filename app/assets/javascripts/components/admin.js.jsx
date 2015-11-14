@@ -94,7 +94,7 @@ $(function() {
 				<div id="add-expert">
 					<ShowUser url="/users/role/1" />
 					<form>
-						专家名:<input value={this.state.name} ref="name" onChange={this.handleChange}/>
+						评标人:<input value={this.state.name} ref="name" onChange={this.handleChange}/>
 						密码:<input type="password" value={this.state.password} ref="password" onChange={this.handleChange}/>
 						<input type="submit" className="btn btn-success" value="添加" onClick={this.handleSubmit}/>
 					</form>
@@ -146,7 +146,7 @@ $(function() {
 			return(
 				<ul className="etabs">
 					<li className="tab">
-						<a href="#add-expert">专家清单</a>
+						<a href="#add-expert">评标人清单</a>
 					</li>
 					<li className="tab">
 						<a href="#add-user">投标人清单</a>

@@ -315,7 +315,7 @@ var Standard = React.createClass({
   render: function(){
     return(
       <div id="tab-container" className="tab-container">
-        <h1>投标管理系统</h1>
+        <h1>多方案多属性多专家排序系统</h1>
         <LogoutButton />
         <p>投标人投标</p>
         <TabTitle />

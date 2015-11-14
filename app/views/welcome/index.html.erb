@@ -26,7 +26,7 @@
   </p>
 
   <p>
-    <%= f.label :专家一打分 %><br>
+    <%= f.label :评标人一打分 %><br>
     <%= f.label :方案一 %><br>
     <%= f.text_field :score1A %>
     <%= f.text_field :score1B %>
@@ -43,7 +43,7 @@
 </p>
 
 <p>
-  <%= f.label :专家二打分 %><br>
+  <%= f.label :评标人二打分 %><br>
   <%= f.label :方案一 %><br>
   <%= f.text_field :scoreX1A %>
   <%= f.text_field :scoreX1B %>
@@ -66,6 +66,6 @@
 
 <% unless @weightA.nil? %>
     <div>初始权重: <%=@weightA[0]%>,  <%=@weightA[1]%>,  <%=@weightA[2]%>,  <%=@weightA[3]%></div>
-    <div>专家一修订权重: <%=@weightB[:wang][0]%>,  <%=@weightB[:wang][1]%>,  <%=@weightB[:wang][2]%>,  <%=@weightB[:wang][3]%></div>
-    <div>专家二修订权重: <%=@weightB[:zhang][0]%>,  <%=@weightB[:zhang][1]%>,  <%=@weightB[:zhang][2]%>,  <%=@weightB[:zhang][3]%></div>
+    <div>评标人一修订权重: <%=@weightB[:wang][0]%>,  <%=@weightB[:wang][1]%>,  <%=@weightB[:wang][2]%>,  <%=@weightB[:wang][3]%></div>
+    <div>评标人二修订权重: <%=@weightB[:zhang][0]%>,  <%=@weightB[:zhang][1]%>,  <%=@weightB[:zhang][2]%>,  <%=@weightB[:zhang][3]%></div>
 <% end %>
